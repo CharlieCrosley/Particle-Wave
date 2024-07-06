@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Particle Wave</title>
+		<script type="module" src="src/main.ts"></script>
+		<link rel="stylesheet" href="src/styles.css">
+	</head>
+	<body>
+		<div class="sidenav">
+			<div class="nav-section-title">Wave Params</div>
+			<div class="nav-row">
+				<label for="freq">Freq:</label>
+				<input type="number" id="freq" name="freq" min="0" max="100" value="0.1"/>
+			</div>
+			<div class="nav-row">
+				<label for="amp">Amp:</label>
+				<input type="number" id="amp" name="amp" min="0" max="100" value="5.5"/>
+			</div>
+			<div class="nav-row">
+				<label for="width">Width:</label>
+				<input type="number" id="width" name="width" min="0" max="1000" value="300"/>
+			</div>
+			<div class="nav-row">
+				<label for="height">Height:</label>
+				<input type="number" id="height" name="height" min="0" max="1000" value="300"/>
+			</div>
+			<div class="nav-row">
+				<label for="spread">Spread:</label>
+				<input type="number" id="spread" name="spread" min="0" max="50" value="3"/>
+			</div>
+			<div class="nav-section-title" style="padding-top: 20px;">Cursor Params</div>
+			<div class="nav-row">
+				<label for="radius">Radius:</label>
+				<input type="number" id="radius" name="radius" min="0" max="1000" value="20"/>
+			</div>
+			<div class="nav-row">
+				<label for="strength">Strength:</label>
+				<input type="number" id="strength" name="strength" min="0" max="50" value="1"/>
+			</div>
+			
+		</div>
+		<div id="three-container" class="three-container"></div>
+		<div id="stats" class="stats"></div>	
+	</body>
+</html>
